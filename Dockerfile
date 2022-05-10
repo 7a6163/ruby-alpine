@@ -1,4 +1,4 @@
-FROM ruby:2.4.10-alpine
+FROM ruby:2.7.6-alpine
 
 ENV BUILD_PACKAGES curl-dev build-base
 ENV RUBY_PACKAGES cairo-dev postgresql-dev tzdata wget
@@ -11,7 +11,7 @@ RUN apk add --no-cache \
     git \
     imagemagick \
     less \
-    nodejs \
+    nodejs-current \
     openssh
 
 RUN wget --no-check-certificate https://github.com/kernix/wkhtmltopdf-docker-alpine/raw/master/wkhtmltopdf -P /usr/bin/
