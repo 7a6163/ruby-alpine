@@ -1,4 +1,4 @@
-FROM ruby:2.7.7-alpine
+FROM ruby:2.7.8-alpine
 
 ENV BUILD_PACKAGES curl-dev build-base
 ENV RUBY_PACKAGES cairo-dev postgresql-dev tzdata wget
