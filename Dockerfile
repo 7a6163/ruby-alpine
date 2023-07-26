@@ -19,4 +19,4 @@ RUN chmod a+x /usr/bin/wkhtmltopdf
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US.UTF-8
-RUN gem install bundler && gem cleanup uri && gem install uri -v 0.10.3
+RUN gem install bundler -v 2.4.17 && gem install uri -v 0.10.3
