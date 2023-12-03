@@ -2,7 +2,7 @@ FROM ruby:3.1-alpine
 
 ENV BUILD_PACKAGES curl-dev build-base
 ENV RUBY_PACKAGES cairo-dev postgresql-dev tzdata wget
-ENV WKHTMLTOPDF_PACKAGES gtk+ glib ttf-freefont fontconfig dbus
+ENV WKHTMLTOPDF_PACKAGES gtk+3.0 glib ttf-freefont fontconfig dbus
 
 RUN apk add --no-cache \
     $BUILD_PACKAGES \
