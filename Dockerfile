@@ -1,4 +1,4 @@
-FROM ruby:3.3.8-alpine
+FROM ruby:3.3.9-alpine
 
 ENV BUILD_PACKAGES curl-dev build-base
 ENV RUBY_PACKAGES cairo-dev cmake libgit2-dev postgresql-dev tzdata wget
