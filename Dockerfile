@@ -1,4 +1,4 @@
-FROM ruby:3.3.9-alpine
+FROM ruby:3.3.11-alpine
 
 ENV BUILD_PACKAGES curl-dev build-base
 ENV RUBY_PACKAGES cairo-dev cmake libgit2-dev postgresql-dev tzdata wget
@@ -19,4 +19,4 @@ RUN chmod a+x /usr/bin/wkhtmltopdf
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US.UTF-8
-RUN gem install bundler -v 2.6.8
+RUN gem install bundler -v 4.0.10
