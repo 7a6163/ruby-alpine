@@ -10,7 +10,7 @@ Published to Docker Hub as [`7a6163/ruby-alpine`](https://hub.docker.com/r/7a616
 
 | Component | Notes |
 |-----------|-------|
-| Ruby | `3.3.11` (Alpine variant) |
+| Ruby | `3.3.12` (Alpine variant) |
 | Bundler | `4.0.10` |
 | Build toolchain | `build-base`, `curl-dev`, `cmake` — for compiling native gem extensions |
 | Database | `postgresql-dev` headers (for the `pg` gem) |
