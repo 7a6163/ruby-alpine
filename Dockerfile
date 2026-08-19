@@ -8,16 +8,16 @@ RUN apk add --no-cache \
     $BUILD_PACKAGES \
     $RUBY_PACKAGES \
     $WKHTMLTOPDF_PACKAGES \
+    font-noto-cjk \
     git \
     imagemagick \
+    imagemagick-jpeg \
+    imagemagick-webp \
     less \
     nodejs-current \
     openssh \
     typst \
-    font-noto-cjk
-
-RUN wget --no-check-certificate https://github.com/kernix/wkhtmltopdf-docker-alpine/raw/master/wkhtmltopdf -P /usr/bin/
-RUN chmod a+x /usr/bin/wkhtmltopdf
+    vips
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US.UTF-8
