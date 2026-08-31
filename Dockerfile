@@ -19,6 +19,13 @@ RUN apk add --no-cache \
     typst \
     vips
 
+# Pre-cache the tiaoma Typst package (Code 128 / QR barcode generator, WASM-compiled
+# zint) so PDF rendering never needs network access. Without this the first compile
+# reaches out to packages.typst.org and dies on runners with no egress to it.
+RUN printf '#import "@preview/tiaoma:0.3.0" as tiaoma\n#tiaoma.qrcode("warmup")\n' > /tmp/pc.typ && \
+    typst compile /tmp/pc.typ /tmp/pc.pdf && \
+    rm /tmp/pc.typ /tmp/pc.pdf
+
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US.UTF-8
 RUN gem install bundler -v 4.0.19
