@@ -4,7 +4,8 @@ A lean Ruby base image on Alpine Linux, preloaded with the native libraries and
 tools commonly needed to build and run Rails-style applications — without baking
 those dependencies into every downstream `Dockerfile`.
 
-Published to Docker Hub as [`7a6163/ruby-alpine`](https://hub.docker.com/r/7a6163/ruby-alpine).
+Published to Docker Hub as [`7a6163/ruby-alpine`](https://hub.docker.com/r/7a6163/ruby-alpine)
+and to GitHub Container Registry as `ghcr.io/7a6163/ruby-alpine`.
 
 ## What's Included
 
@@ -62,5 +63,6 @@ git push origin v<version>
 ```
 
 This cross-builds `linux/amd64` and `linux/arm64` and pushes both the version tag
-and `latest` to Docker Hub. The workflow requires the `DOCKERHUB_USERNAME` and
-`DOCKERHUB_TOKEN` repository secrets.
+and `latest` to both Docker Hub and `ghcr.io`. The workflow requires the
+`DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` repository secrets; GHCR uses the
+built-in `GITHUB_TOKEN`.
