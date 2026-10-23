@@ -1,4 +1,4 @@
-FROM ruby:4.0.7-alpine
+FROM ruby:4.0.8-alpine
 
 ENV BUILD_PACKAGES="curl-dev build-base"
 ENV RUBY_PACKAGES="cairo-dev cmake libgit2-dev postgresql-client postgresql-dev tzdata wget"
