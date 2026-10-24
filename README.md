@@ -11,7 +11,7 @@ and to GitHub Container Registry as `ghcr.io/7a6163/ruby-alpine`.
 
 | Component | Notes |
 |-----------|-------|
-| Ruby | `4.0.8` (Alpine variant) |
+| Ruby | `4.0.9` (Alpine variant) |
 | Bundler | `4.0.23` |
 | Build toolchain | `build-base`, `curl-dev`, `cmake` — for compiling native gem extensions |
 | Database | `postgresql-dev` headers (for the `pg` gem) |
