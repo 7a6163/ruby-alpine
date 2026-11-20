@@ -28,4 +28,4 @@ RUN printf '#import "@preview/tiaoma:0.3.0" as tiaoma\n#tiaoma.qrcode("warmup")\
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US.UTF-8
-RUN gem install bundler -v 4.0.23
+RUN gem install bundler -v 4.1.0
